@@ -42,8 +42,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Column {
-                HeaderTextViewCreate(data = "Sign Up")
-                EditTexts()
+//                HeaderTextViewCreate(data = "Sign Up")
+//                EditTexts()
+                GreetingPreview()
             }
 
 //            GalleryComposeTheme {
@@ -89,7 +90,7 @@ fun EditTexts() {
         TextViewCreate(data = "Enter you Phone Number")
         NameEditText("Phone Number Name")
         ButtonCreate()
-
+      //  TopLayout()
     }
 }
 }
@@ -116,7 +117,7 @@ fun HeaderTextViewCreate(data : String){
         color = Color.Blue,
         modifier = Modifier
             .fillMaxWidth()
-            .padding(5.dp,120.dp,5.dp,5.dp),
+            .padding(5.dp, 120.dp, 5.dp, 5.dp),
         fontSize = 15.sp,
         fontStyle = FontStyle.Normal,
         fontFamily = FontFamily.Monospace,
@@ -162,6 +163,7 @@ fun ButtonCreate() {
 @Composable
 fun GreetingPreview() {
     GalleryComposeTheme {
+        HeaderTextViewCreate(data = "Sign Up")
         EditTexts()
     }
 }
